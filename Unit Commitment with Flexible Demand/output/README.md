@@ -20,7 +20,7 @@ The purpose of these analyses is to understand how changes in key parameters aff
   - Social welfare  
 
 - `README.md` – This file, including methodology and conclusions.
-# Sensitivity Analysis – Project Summary
+
 
 ## Case Study: Temporal Flexibility in the U.S. Day-Ahead Wholesale Electricity Market
 
