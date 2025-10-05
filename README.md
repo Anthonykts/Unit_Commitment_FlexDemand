@@ -82,9 +82,26 @@ This project demonstrates the flexible demand model applied to the U.S. day-ahea
 For privacy reasons, the full input Excel file cannot be shared. Instead, a screenshot of the first few rows of the dataset is provided for reference, illustrating the structure of the data, the flexibility parameters, and the cost information. Users can replicate the workflow with their own U.S. market data if desired.
 The model optimizes hourly generation schedules, demand shifts, and social welfare while ensuring energy neutrality, providing insights into how flexible demand impacts market operations, generation scheduling, and social welfare in the U.S. electricity context.
 
+---
+
 ## 📌 Summary
 
 The model allows shifting part of the baseline demand from high-cost hours to low-cost hours without changing the total daily consumption. This shift is energy-neutral, maintaining total consumption over the day while adapting the timing of consumption to market conditions. By including parameters such as α (maximum fraction of shiftable demand) and optional discomfort costs, the model provides a flexible, general, and agnostic framework to study the effects of demand flexibility on market prices, generation schedules, and social welfare in U.S. electricity markets.
+
+---
+
+## General Conclusions from the Thesis
+
+This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesale Electricity Markets**, aiming to design optimal market-clearing mechanisms that consider the complexity of demand flexibility and temporal coupling.
+
+**Key Findings:**
+- Integration of flexible demand improves market efficiency and social welfare by enabling smoother balancing of supply and demand, reducing price volatility, and promoting system stability.
+- In both Greek and U.S. market case studies, increasing the degree of demand flexibility eliminates additional start-up and hold costs, further reducing total production costs.
+- Shifting demand to periods of high renewable generation and low conventional load reduces the use of conventional units, leveraging zero-cost and zero-emission renewable energy without inducing curtailment.
+- Producer revenues stabilize as price volatility decreases, while consumers benefit from lower peak prices and smoother cost patterns.
+- Maintaining reasonable limits for **discomfort costs** (e.g., ≤50 €/MWh) ensures that demand flexibility remains feasible and attractive for consumers.
+
+---
 
 ## ⚙️ Solver Requirements
 
