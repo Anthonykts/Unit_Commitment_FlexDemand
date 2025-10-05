@@ -14,26 +14,55 @@ The purpose of these analyses is to understand how changes in key parameters aff
 - `plots/` – Graphical representation of the sensitivity analyses, including:
   - Demand curves  
   - Electricity prices  
+  - start-up / shut-down cost
   - Profit  
-  - Utility start-up and shut-down costs  
+  - Utility
   - Social welfare  
 
 - `README.md` – This file, including methodology and conclusions.
+# Sensitivity Analysis – Project Summary
 
-## Key Findings
+## Case Study: Temporal Flexibility in the U.S. Day-Ahead Wholesale Electricity Market
 
-### 1. Flexibility Index
-- Highly sensitive to changes in electricity prices and demand patterns, indicating that small variations can significantly affect system flexibility.  
-- Start-up and shut-down costs of utilities have a moderate impact on flexibility.  
-- Social welfare outcomes are indirectly affected by flexibility changes, emphasizing the importance of optimal management.
+This case study examines the effect of ** flexibility factor (a𝑑)** on market outcomes, independent of the above sensitivity analyses.
 
-### 2. Discomfort Costs
-- Discomfort costs are primarily influenced by demand curves and electricity price variations.  
-- High start-up or shut-down costs can also increase overall system costs, impacting social welfare.  
-- Profit and operational efficiency are affected by parameter changes, highlighting trade-offs between cost, flexibility, and welfare.
+**Market Data and Participants**  
+- Hourly analysis over 24 hours.  
+- 7 producers, each submitting 5 bids per hour.  
+- Technical characteristics included in bids; RES excluded.  
 
-## Conclusions
+**Sensitivity to Temporal Flexibility (a𝑑)**  
+- \(a_d\) represents the degree of temporal flexibility of consumers.  
+- Increasing \(a_d\) allows more shiftable quantities and enhances market adaptability.  
+- Demand uniformity coefficient \(m_0\) rises; demand curve nearly flat for \(a_d \ge 0.4\).  
 
-- The system shows resilience to minor variations in less influential parameters.  
-- Targeted optimization of high-impact parameters (electricity prices, demand patterns, start-up/shut-down costs) is essential to enhance flexibility, reduce discomfort costs, and improve social welfare.  
-- Sensitivity analysis provides actionable insights for stakeholders in system planning and operational decision-making.
+**Effect on Market Clearing and Costs**  
+- Cleared quantity remains constant.  
+- Start-up and hold costs vanish for \(a_d \ge 0.2\).  
+- Fixed operating and production costs decrease and stabilize for \(a_d \ge 0.3\).  
+- Net demand curve smooths as \(a_d\) increases, creating a more stable system.  
+
+**Revenues, Profits, and Welfare**  
+- **Producer profits:** Increase for \(0 \le a_d \le 0.2\), slightly decrease for \(0.2 \le a_d \le 0.4\), stabilize for \(a_d \ge 0.4\).  
+- **Consumer welfare:** Initially decreases for \(0 \le a_d \le 0.2\), increases for \(0.2 \le a_d \le 0.4\), stabilizes for \(a_d \ge 0.4\).  
+
+**Conclusions**  
+- Temporal flexibility smooths the demand curve and reduces start-up/hold costs.  
+- System becomes more stable and efficient.  
+- Saturation at \(a_d \ge 0.4\); additional flexibility beyond this point gives no extra benefits.  
+- Managing flexible quantities optimizes costs and producer profits.
+
+## Sensitivity Analysis – Discomfort Costs
+
+In addition to flexibility, the sensitivity of **discomfort costs** was analyzed to understand how changes in key parameters affect consumer discomfort, system costs, and social welfare.
+
+**Key Findings**  
+- Discomfort costs are primarily affected by variations in demand patterns and electricity prices.  
+- High start-up or shut-down costs can increase overall system costs, indirectly impacting consumer welfare.  
+- Changes in discomfort costs highlight trade-offs between operational costs, market flexibility, and social welfare.  
+- Identifying the parameters with the greatest impact guides system optimization and operational decisions.
+
+**Conclusions**  
+- Reducing discomfort costs requires careful management of demand shifts and operational costs.  
+- Targeted optimization of high-impact parameters enhances consumer welfare while maintaining system efficiency.  
+- Sensitivity analysis offers actionable insights for planners and operators to balance cost, flexibility, and welfare.
