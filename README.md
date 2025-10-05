@@ -1,4 +1,4 @@
-# Flexible Demand and Unit Commitment in U.S. Electricity Markets
+# Unit Commitment with Flexible Demand in U.S. Electricity Markets
 
 This project explores the integration of flexible demand into the U.S. day-ahead electricity markets through a unit commitment framework. The model is designed to be general and agnostic, meaning it does not rely on specific technical characteristics of individual loads or consumers. This allows for flexible, scenario-based analyses and facilitates the evaluation of different demand response strategies without the need for detailed technical data for each load. The project aims to provide insights into how flexible demand can influence system operation, generation scheduling, and market outcomes in the U.S. electricity context.
 
@@ -31,6 +31,7 @@ This project explores the integration of flexible demand into the U.S. day-ahead
 ---
 
 ## 🌟 Benefits of the General and Agnostic Approach
+
 - Applicability across multiple markets without detailed load information
 - Policy analysis capabilities: Suitable for system operators, regulators, or governments to evaluate the impact of flexible demand on market stability and social welfare
 - Educational and research tool: Ideal for teaching, research simulations, and scenario analysis
