@@ -1,6 +1,6 @@
 # Unit Commitment with Flexible Demand in U.S. Electricity Markets
 
-This project explores the integration of flexible demand into the U.S. day-ahead electricity markets through a unit commitment framework. The model is designed to be general and agnostic, meaning it does not rely on specific technical characteristics of individual loads or consumers. This allows for flexible, scenario-based analyses and facilitates the evaluation of different demand response strategies without the need for detailed technical data for each load. The project aims to provide insights into how flexible demand can influence system operation, generation scheduling, and market outcomes in the U.S. electricity context.
+This project explores the integration of **flexible demand** into the U.S. day-ahead electricity markets via a **unit commitment framework**. The model is designed to be **general and agnostic**, meaning it does not rely on specific technical characteristics of individual loads or consumers. This enables scenario-based analyses and the evaluation of different demand response strategies without needing detailed technical data for each load. The project provides insights into how flexible demand influences system operation, generation scheduling, and market outcomes.
 
 ## 🔑 Key Features of the Model
 
@@ -32,15 +32,19 @@ This project explores the integration of flexible demand into the U.S. day-ahead
 
 ## 🌟 Benefits of the General and Agnostic Approach
 
-- Applicability across multiple markets without detailed load information
-- Policy analysis capabilities: Suitable for system operators, regulators, or governments to evaluate the impact of flexible demand on market stability and social welfare
-- Educational and research tool: Ideal for teaching, research simulations, and scenario analysis
+- Applicability across multiple markets without detailed load information  
+- Policy analysis capabilities: Suitable for system operators, regulators, or governments to evaluate the impact of flexible demand on market stability and social welfare  
+- Educational and research tool: Ideal for teaching, research simulations, and scenario analysis  
+
+---
 
 ## 📌 Model Overview
 
-The U.S. day-ahead electricity markets clear generation schedules and prices using a **unit commitment and economic dispatch framework**, where generators submit offers including energy prices, capacities, and operational constraints. The market clearing process determines which units are committed and their hourly dispatch to meet forecasted demand at minimum system cost. 
+The U.S. day-ahead electricity markets clear generation schedules and prices using a **unit commitment and economic dispatch framework**, where generators submit offers including energy prices, capacities, and operational constraints. The market clearing process determines which units are committed and their hourly dispatch to meet forecasted demand at **minimum system cost**.
 
 To incorporate demand flexibility, the model allows part of the demand to be shifted across hours within the day, while maintaining **energy neutrality** (total daily consumption remains unchanged). This allows flexible loads to adapt their consumption to market conditions, providing potential cost savings, reduced peak loads, and increased social welfare.
+
+---
 
 ## 🔎 Key Elements  
 
@@ -71,34 +75,41 @@ Unit_Commitment_FlexDemand/
         ├── Sensitivity_Analysis_Flexibility/   
         └── Sensitivity_Analysis_Discomfort/    
 ```
+
 ---
 
 ## 📄 Main Project Overview
 
-This project demonstrates the flexible demand model applied to the U.S. day-ahead electricity market. To capture demand flexibility and consumer preferences, the input dataset includes additional fields for:
-- Flexibility parameter (α)
-- Optional discomfort costs for shifting consumption
+This project demonstrates the **flexible demand model** applied to the **U.S. day-ahead electricity market**. To capture demand flexibility and consumer preferences, the input dataset includes additional fields for:
 
-For privacy reasons, the full input Excel file cannot be shared. Instead, a screenshot of the first few rows of the dataset is provided for reference, illustrating the structure of the data, the flexibility parameters, and the cost information. Users can replicate the workflow with their own U.S. market data if desired.
-The model optimizes hourly generation schedules, demand shifts, and social welfare while ensuring energy neutrality, providing insights into how flexible demand impacts market operations, generation scheduling, and social welfare in the U.S. electricity context.
+- **Flexibility parameter (α)**  
+- **Optional discomfort costs** for shifting consumption  
+
+For privacy reasons, the full input Excel file cannot be shared. Instead, a screenshot of the first few rows of the dataset is provided for reference, illustrating the structure of the data, the flexibility parameters, and the cost information.  
+Users can replicate the workflow with their own U.S. market data if desired.  
+
+The model optimizes **hourly generation schedules**, **demand shifts**, and **social welfare**, while ensuring **energy neutrality** — providing insights into how flexible demand impacts market operations, generation scheduling, and welfare outcomes in the U.S. electricity context.
 
 ---
 
 ## 📌 Summary
 
-The model allows shifting part of the baseline demand from high-cost hours to low-cost hours without changing the total daily consumption. This shift is energy-neutral, maintaining total consumption over the day while adapting the timing of consumption to market conditions. By including parameters such as α (maximum fraction of shiftable demand) and optional discomfort costs, the model provides a flexible, general, and agnostic framework to study the effects of demand flexibility on market prices, generation schedules, and social welfare in U.S. electricity markets.
+The model allows shifting part of the baseline demand from **high-cost hours** to **low-cost hours** without changing the total daily consumption.  
+This shift is **energy-neutral**, maintaining total consumption over the day while adapting the timing of usage to market conditions.  
+
+By including parameters such as **α (maximum fraction of shiftable demand)** and **optional discomfort costs**, the model provides a **flexible, general, and agnostic framework** to study the effects of demand flexibility on market prices, generation schedules, and social welfare in U.S. electricity markets.
 
 ---
 
-## General Conclusions from the Thesis
+## 📝 General Conclusions from the Thesis
 
-This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesale Electricity Markets**, aiming to design optimal market-clearing mechanisms that consider the complexity of demand flexibility and temporal coupling.
+This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesale Electricity Markets**, aiming to design **optimal market-clearing mechanisms** that consider the complexity of demand flexibility and temporal coupling.
 
 **Key Findings:**
-- Integration of flexible demand improves market efficiency and social welfare by enabling smoother balancing of supply and demand, reducing price volatility, and promoting system stability.
-- In both Greek and U.S. market case studies, increasing the degree of demand flexibility eliminates additional start-up and hold costs, further reducing total production costs.
-- Shifting demand to periods of high renewable generation and low conventional load reduces the use of conventional units, leveraging zero-cost and zero-emission renewable energy without inducing curtailment.
-- Producer revenues stabilize as price volatility decreases, while consumers benefit from lower peak prices and smoother cost patterns.
+- Integrating flexible demand improves **market efficiency** and **social welfare** by enabling smoother balancing of supply and demand, reducing price volatility, and promoting system stability.  
+- In both **Greek** and **U.S.** market case studies, increasing the degree of demand flexibility eliminates additional start-up and hold costs, further reducing total production costs.  
+- Shifting demand to periods of **high renewable generation** and **low conventional load** reduces the use of conventional units, leveraging **zero-cost and zero-emission** renewable energy without inducing curtailment.  
+- **Producer revenues** stabilize as price volatility decreases, while **consumers** benefit from lower peak prices and smoother cost patterns.  
 - Maintaining reasonable limits for **discomfort costs** (e.g., ≤50 €/MWh) ensures that demand flexibility remains feasible and attractive for consumers.
 
 ---
@@ -107,21 +118,33 @@ This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesal
 
 For large-scale unit commitment problems with flexible demand, a **high-performance solver** is recommended:
 
-- **Gurobi**: Recommended for solving MILP efficiently. **Requires a valid license**.
-- **GLPK** or **CBC** can be used for smaller instances, but may struggle with computational time on large datasets.
+- **Gurobi** → Recommended for solving MILP efficiently (**requires valid license**)  
+- **GLPK** or **CBC** → Suitable for smaller instances, but may experience longer computational times on large datasets  
 
-> **Note:** The model includes binary variables for unit commitment decisions, which increases complexity. Using Gurobi with a proper license ensures faster and more reliable optimization results.
+> **Note:** The model includes binary variables for unit commitment decisions, which increases complexity.  
+> Using **Gurobi** with a proper license ensures faster and more reliable optimization results.
+
+---
 
 ## 📚 Dependencies
 
-- Python ≥ 3.8 
-- pandas – Data handling
-- numpy – Numerical operations
-- gurobipy – Solver and optimization API
-- xlsxwriter / openpyxl 
+- **Python ≥ 3.8**  
+- **pandas** – Data handling  
+- **numpy** – Numerical operations  
+- **gurobipy** – Solver and optimization API  
+- **xlsxwriter / openpyxl** – Excel export and manipulation  
 
+---
 
 ## 📄 License / Credits
 
-This project is provided for educational and research purposes. You are free to use, modify, and share it under the MIT License. See the LICENSE file for details.
-The code and models were developed as part of a study on flexible demand in the European day-ahead electricity market.
+This project is provided for educational and research purposes. You are free to use, modify, and share it under the MIT License. See the LICENSE file for details.  
+
+The code and models were developed as part of the **Diploma Thesis titled _"Analysis of the Impact of Flexible Demand on the Day-Ahead Wholesale Electricity Market"_**, conducted at the **University of Patras**, School of Electrical and Computer Engineering.  
+
+The research focuses on the **optimization and market integration of flexible demand** in **modern Day-Ahead Wholesale Electricity Markets**, analyzing both **European (simple bidding)** and **U.S. (complex bidding)** market mechanisms. It examines how different clearing strategies can incorporate time flexibility of demand, assess their impact on market efficiency, system operation, and social welfare, and proposes optimal frameworks that account for temporal coupling constraints.
+
+![Python Version](https://img.shields.io/badge/python-3.8+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+
