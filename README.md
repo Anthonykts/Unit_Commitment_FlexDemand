@@ -74,12 +74,12 @@ Unit_Commitment_FlexDemand/
 
 ## 📄 Main Project Overview
 
-The main project demonstrates the flexible demand model using real market data from the Greek day-ahead electricity market for May 17, 2024. To capture demand flexibility and consumer preferences, three additional columns were added to the input dataset:
+This project demonstrates the flexible demand model applied to the U.S. day-ahead electricity market. To capture demand flexibility and consumer preferences, the input dataset includes additional fields for:
 - Flexibility parameter (α)
 - Optional discomfort costs for shifting consumption
 
-For privacy reasons, the full input Excel file cannot be shared. Instead, a screenshot of the first few rows of the dataset is provided for reference, illustrating the structure of the data, the flexibility parameters, and the cost information. This allows users to replicate the workflow with their own data if desired.
-The model optimizes hourly generation schedules, shifted demand, and social welfare, respecting energy neutrality constraints, providing insights into how flexible demand affects the Greek day-ahead market.
+For privacy reasons, the full input Excel file cannot be shared. Instead, a screenshot of the first few rows of the dataset is provided for reference, illustrating the structure of the data, the flexibility parameters, and the cost information. Users can replicate the workflow with their own U.S. market data if desired.
+The model optimizes hourly generation schedules, demand shifts, and social welfare while ensuring energy neutrality, providing insights into how flexible demand impacts market operations, generation scheduling, and social welfare in the U.S. electricity context.
 
 ## 📌 Summary
 
