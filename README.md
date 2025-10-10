@@ -13,8 +13,8 @@
 7. [Summary](#summary)
 8. [Solver Requirements](#solver-requirements)
 9. [Results & Analysis](#results--analysis)
-10. [Case Study: Temporal Flexibility](#case-study-temporal-flexibility)
-11. [Case Study: Discomfort Costs](#case-study-discomfort-costs)
+10. [Case Study 1: Sensitivity Analysis on Flexibility Factor (ad)](#case-study-1-sensitivity-analysis-on-flexibility-factor-ad-in-the-us-day-ahead-market)
+11. [Case Study 2: Sensitivity Analysis on Discomfort Costs (Bd_sh_AWAY, Bd_sh_TOWARDS)](#case-study-2-sensitivity-analysis-on-discomfort-costs-bd_sh_away-bd_sh_towards-in-the-us-day-ahead-market)
 12. [Summary of Behavioral Findings](#summary-of-behavioral-findings)
 13. [Overall Conclusions](#overall-conclusions)
 14. [General Conclusions from the Thesis](#general-conclusions-from-the-thesis)
@@ -143,6 +143,13 @@ For large-scale unit commitment problems with flexible demand, a **high-performa
 
 ### Sensitivity Analysis – Project Summary
 
+### Market Data and Setup
+
+- **Hourly analysis:** 24-hour time horizon  
+- **Participants:** 7 producers (each submitting 5 hourly bids)  
+- **Bids:** Include technical characteristics and startup/shutdown costs  
+- **RES units:** Excluded from this study
+
 This section presents the results of the **sensitivity analyses** conducted on:
 
 - **Flexibility Index (αₑ)**
@@ -163,99 +170,70 @@ The purpose of these analyses is to understand how changes in key parameters aff
 
 ---
 
-### ⚙️ Case Study: Temporal Flexibility in the U.S. Day-Ahead Market
+### Case Study 1: Sensitivity Analysis on Flexibility Factor (ad) in the U.S. Day-Ahead Market
 
-This case study examines the effect of the **flexibility factor (αd)** on market outcomes, independent of the above sensitivity analyses.
-
-#### Market Data and Setup
-
-- **Hourly analysis:** 24-hour time horizon  
-- **Participants:** 7 producers (each submitting 5 hourly bids)  
-- **Bids:** Include technical characteristics and startup/shutdown costs  
-- **RES units:** Excluded from this study  
+This case study examines the effect of the **flexibility factor (αd)** on market outcomes, independent of other sensitivity analyses.
 
 ---
 
-### 🔍 Sensitivity to Temporal Flexibility (αd)
+#### Sensitivity to Temporal Flexibility (αd)
 
 - (αd) represents the degree of **temporal flexibility of consumers**.  
 - Increasing (αd) allows more **shiftable quantities** and enhances **market adaptability**.  
-- Demand uniformity coefficient (m₀) rises; demand curve becomes nearly flat for (αd ≥ 0.4).
-#### 📈 Key Plots
+- Demand uniformity coefficient (m₀) rises; the demand curve becomes nearly flat for (αd ≥ 0.4).
 
 ---
 
-## 📈 Key Plots
+#### Key Plots
 
-### Figure 1 – Demand Curve under different α
-<img width="723" height="397" alt="Demand Curve" src="https://github.com/user-attachments/assets/014a6581-2b2c-464c-886e-e8af33baf8f3" />
-
+**Figure 1 – Demand Curve under different α**  
+<img width="723" height="397" alt="Demand Curve" src="https://github.com/user-attachments/assets/014a6581-2b2c-464c-886e-e8af33baf8f3" />  
 *The demand curve becomes smoother as flexibility (α) increases, indicating higher adaptability and reduced demand peaks.*
 
----
-
-### Figure 2 – Electricity Prices
-<img width="620" height="318" alt="image" src="https://github.com/user-attachments/assets/3ee4cb4f-0fb6-43e9-8520-8a038ee902d3" />
-
+**Figure 2 – Electricity Prices**  
+<img width="620" height="318" alt="Electricity Prices" src="https://github.com/user-attachments/assets/3ee4cb4f-0fb6-43e9-8520-8a038ee902d3" />  
 *Average electricity prices stabilize with increasing demand flexibility, reducing volatility and improving market efficiency.*
 
----
-
-### Figure 3 – Shifted Load
-<img width="616" height="342" alt="image" src="https://github.com/user-attachments/assets/efafe467-e88e-4812-9b93-4e51a0363f5e" />
-
+**Figure 3 – Shifted Load**  
+<img width="616" height="342" alt="Shifted Load" src="https://github.com/user-attachments/assets/efafe467-e88e-4812-9b93-4e51a0363f5e" />  
 *Load shifting visualization showing redistribution of consumption from high-cost to low-cost hours.*
 
----
-
-### Figure 4 – Start-up / Shut-down Costs
-<img width="670" height="372" alt="image" src="https://github.com/user-attachments/assets/bacf4043-74b9-4bcb-80ad-514041c39b89" />
-
+**Figure 4 – Start-up / Shut-down Costs**  
+<img width="670" height="372" alt="Start-up / Shut-down Costs" src="https://github.com/user-attachments/assets/bacf4043-74b9-4bcb-80ad-514041c39b89" />  
 *Start-up and hold costs vanish for α ≥ 0.2, reflecting smoother generation scheduling and fewer unit transitions.*
 
----
-
-### Figure 5 – Producer Profits
-<img width="575" height="357" alt="image" src="https://github.com/user-attachments/assets/0fb6743d-3777-47f2-b173-07752957f00b" />
-
+**Figure 5 – Producer Profits**  
+<img width="575" height="357" alt="Producer Profits" src="https://github.com/user-attachments/assets/0fb6743d-3777-47f2-b173-07752957f00b" />  
 *Producer profits increase initially with flexibility but stabilize beyond α ≥ 0.4, showing diminishing returns.*
 
----
-
-### Figure 6 – Utility
-<img width="618" height="340" alt="image" src="https://github.com/user-attachments/assets/19a492cc-188a-48d6-b9dc-d272947b3a34" />
-
+**Figure 6 – Utility**  
+<img width="618" height="340" alt="Utility" src="https://github.com/user-attachments/assets/19a492cc-188a-48d6-b9dc-d272947b3a34" />  
 *Utility trends indicate that moderate flexibility levels optimize both producer and consumer benefits.*
 
----
-
-### Figure 7 – Social Welfare
-<img width="527" height="273" alt="image" src="https://github.com/user-attachments/assets/1dc7264e-6ae3-4e31-875c-1b696288ac06" />
-
+**Figure 7 – Social Welfare**  
+<img width="527" height="273" alt="Social Welfare" src="https://github.com/user-attachments/assets/1dc7264e-6ae3-4e31-875c-1b696288ac06" />  
 *Overall social welfare rises with flexibility, peaking at α ≈ 0.4 before plateauing.*
 
 ---
 
-### 💰 Effect on Market Clearing and Costs
+#### Effect on Market Clearing and Costs
 
 - **Cleared quantity** remains constant across αd values.  
 - **Start-up and hold costs** vanish for αd ≥ 0.2.  
 - **Fixed operating and production costs** decrease and stabilize for αd ≥ 0.3.  
 - **Net demand curve** smooths as αd increases, creating a more stable system.
 
----
----
 
-### 🔍 Sensitivity to Discomfort Costs (Bd_sh_AWAY, Bd_sh_TOWARDS)
+### Case Study 2: Sensitivity Analysis on Discomfort Costs (Bd_sh_AWAY, Bd_sh_TOWARDS) in the U.S. Day-Ahead Market
 
-This section analyzes the impact of **discomfort costs** on market outcomes, system operation, and social welfare.  
+This case study analyzes the impact of **discomfort costs** on market outcomes, system operation, and social welfare.  
 Discomfort cost represents the **monetary penalty consumers associate with shifting demand** from their preferred hours — capturing the *psychological and behavioral cost of flexibility*.
 
-As discomfort costs increase, consumers become less willing to shift demand, reducing effective flexibility and changing market clearing outcomes.
+As discomfort costs increase, consumers become less willing to shift demand, reducing effective flexibility and altering market clearing outcomes.
 
 ---
 
-### ⚙️ Key Observations
+#### Key Observations
 
 - **Higher discomfort costs** reduce overall demand flexibility and limit load-shifting potential.  
 - **Electricity prices** increase slightly as flexibility decreases.  
@@ -265,52 +243,35 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 
 ---
 
-## 📈 Key Plots
+#### Key Plots
 
-### Figure 1 – Demand Curve under different Discomfort Cost Levels
-<img width="731" height="387" alt="image" src="https://github.com/user-attachments/assets/54e862b6-24fd-406c-aa3f-35253c0d5cf8" />
-
+**Figure 1 – Demand Curve under different Discomfort Cost Levels**  
+<img width="731" height="387" alt="Demand Curve" src="https://github.com/user-attachments/assets/54e862b6-24fd-406c-aa3f-35253c0d5cf8" />  
 *The demand curve becomes less elastic as discomfort costs increase, illustrating the reduced willingness of consumers to shift demand.*
 
----
-
-### Figure 2 – Electricity Prices
-<img width="751" height="416" alt="image" src="https://github.com/user-attachments/assets/38166a76-2f99-474c-b02d-a0ed9f7563c6" />
-
+**Figure 2 – Electricity Prices**  
+<img width="751" height="416" alt="Electricity Prices" src="https://github.com/user-attachments/assets/38166a76-2f99-474c-b02d-a0ed9f7563c6" />  
 *Average electricity prices rise as discomfort costs increase, driven by reduced flexibility and higher reliance on conventional units.*
 
----
-
-### Figure 3 – Shifted Load / Load Redistribution
-<img width="733" height="312" alt="image" src="https://github.com/user-attachments/assets/926b22a8-9145-4ef6-9253-e84929b638e9" />
-
+**Figure 3 – Shifted Load / Load Redistribution**  
+<img width="733" height="312" alt="Shifted Load" src="https://github.com/user-attachments/assets/926b22a8-9145-4ef6-9253-e84929b638e9" />  
 *Higher discomfort costs limit demand shifting, concentrating consumption in preferred hours and lowering adaptability.*
 
----
-
-### Figure 4 – Producer Profits
-<img width="630" height="355" alt="image" src="https://github.com/user-attachments/assets/d60d9d19-9ac9-42b1-81d4-d103fab2ea36" />
-
+**Figure 4 – Producer Profits**  
+<img width="630" height="355" alt="Producer Profits" src="https://github.com/user-attachments/assets/d60d9d19-9ac9-42b1-81d4-d103fab2ea36" />  
 *Producer profits remain relatively stable at low discomfort levels but decline as consumer flexibility diminishes.*
 
----
-
-### Figure 5 – Consumer Utility
-<img width="712" height="417" alt="image" src="https://github.com/user-attachments/assets/cf3821f1-f034-4ab5-b100-36c16123a1ff" />
-
+**Figure 5 – Consumer Utility**  
+<img width="712" height="417" alt="Consumer Utility" src="https://github.com/user-attachments/assets/cf3821f1-f034-4ab5-b100-36c16123a1ff" />  
 *Consumer utility drops as discomfort costs increase, showing the trade-off between comfort and participation in flexibility programs.*
 
----
-
-### Figure 6 – Social Welfare
-<img width="651" height="357" alt="image" src="https://github.com/user-attachments/assets/78b979c5-b478-408c-af98-89e544e10fe1" />
-
+**Figure 6 – Social Welfare**  
+<img width="651" height="357" alt="Social Welfare" src="https://github.com/user-attachments/assets/78b979c5-b478-408c-af98-89e544e10fe1" />  
 *Overall social welfare declines steadily with higher discomfort costs, underscoring the importance of balancing incentives and flexibility.*
 
 ---
----
 
-### 🔎 Summary of Behavioral Findings
+#### Summary of Behavioral Findings
 
 | Metric | Effect of Increasing Flexibility (↑αd) | Effect of Increasing Discomfort (↑Bd) |
 |--------|-----------------------------------------|---------------------------------------|
@@ -325,7 +286,7 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 
 ---
 
-## 🧭 Overall Conclusions
+#### Overall Conclusions
 
 - **Demand flexibility** significantly improves **market efficiency** and **welfare** by enabling smoother balancing and lower operational costs.  
 - **Higher flexibility** (αd ≥ 0.3) eliminates startup costs and stabilizes prices.  
@@ -335,8 +296,7 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 
 ---
 
-
-## 📝 General Conclusions from the Thesis
+## General Conclusions from the Thesis
 
 This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesale Electricity Markets**, aiming to design **optimal market-clearing mechanisms** that consider the complexity of demand flexibility and temporal coupling.
 
@@ -349,7 +309,7 @@ This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesal
 
 ---
 
-## 📚 Dependencies
+## Dependencies
 
 - **Python ≥ 3.8**  
 - **pandas** – Data handling  
@@ -359,7 +319,7 @@ This thesis focused on integrating **flexible demand** into **Day-Ahead Wholesal
 
 ---
 
-## 📄 License / Credits
+## License / Credits
 
 This project is provided for educational and research purposes. You are free to use, modify, and share it under the MIT License. See the LICENSE file for details.  
 
