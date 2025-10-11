@@ -264,7 +264,7 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 
 ---
 
-#### Summary of Behavioral Findings
+## Summary of Behavioral Findings
 
 | Metric | Effect of Increasing Flexibility (↑αd) | Effect of Increasing Discomfort (↑Bd) |
 |--------|-----------------------------------------|---------------------------------------|
@@ -279,7 +279,7 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 
 ---
 
-#### Overall Conclusions
+## Overall Conclusions
 
 - **Demand flexibility** significantly improves **market efficiency** and **welfare** by enabling smoother balancing and lower operational costs.  
 - **Higher flexibility** (αd ≥ 0.3) eliminates startup costs and stabilizes prices.  
