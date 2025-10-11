@@ -174,8 +174,6 @@ The purpose of these analyses is to understand how changes in key parameters aff
 
 This case study examines the effect of the **flexibility factor (αd)** on market outcomes, independent of other sensitivity analyses.
 
----
-
 #### Sensitivity to Temporal Flexibility (αd)
 
 - (αd) represents the degree of **temporal flexibility of consumers**.  
@@ -214,8 +212,6 @@ This case study examines the effect of the **flexibility factor (αd)** on marke
 <img width="527" height="273" alt="Social Welfare" src="https://github.com/user-attachments/assets/1dc7264e-6ae3-4e31-875c-1b696288ac06" />  
 *Overall social welfare rises with flexibility, peaking at α ≈ 0.4 before plateauing.*
 
----
-
 #### Effect on Market Clearing and Costs
 
 - **Cleared quantity** remains constant across αd values.  
@@ -223,6 +219,7 @@ This case study examines the effect of the **flexibility factor (αd)** on marke
 - **Fixed operating and production costs** decrease and stabilize for αd ≥ 0.3.  
 - **Net demand curve** smooths as αd increases, creating a more stable system.
 
+---
 
 ### Case Study 2: Sensitivity Analysis on Discomfort Costs (Bd_sh_AWAY, Bd_sh_TOWARDS) in the U.S. Day-Ahead Market
 
@@ -231,8 +228,6 @@ Discomfort cost represents the **monetary penalty consumers associate with shift
 
 As discomfort costs increase, consumers become less willing to shift demand, reducing effective flexibility and altering market clearing outcomes.
 
----
-
 #### Key Observations
 
 - **Higher discomfort costs** reduce overall demand flexibility and limit load-shifting potential.  
@@ -240,8 +235,6 @@ As discomfort costs increase, consumers become less willing to shift demand, red
 - **System operating costs** rise, reflecting reduced optimization potential.  
 - **Social welfare** declines beyond moderate discomfort levels.  
 - **Producer revenues** stabilize, while **consumer utility** falls as shifting becomes less attractive.
-
----
 
 #### Key Plots
 
@@ -326,6 +319,8 @@ This project is provided for educational and research purposes. You are free to 
 The code and models were developed as part of the **Diploma Thesis titled _"Analysis of the Impact of Flexible Demand on the Day-Ahead Wholesale Electricity Market"_**, conducted at the **University of Patras**, School of Electrical and Computer Engineering.  
 
 The research focuses on the **optimization and market integration of flexible demand** in **modern Day-Ahead Wholesale Electricity Markets**, analyzing both **European (simple bidding)** and **U.S. (complex bidding)** market mechanisms. It examines how different clearing strategies can incorporate time flexibility of demand, assess their impact on market efficiency, system operation, and social welfare, and proposes optimal frameworks that account for temporal coupling constraints.
+
+---
 
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
